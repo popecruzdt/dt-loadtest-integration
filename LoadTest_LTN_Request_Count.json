@@ -5,8 +5,8 @@
     ],
     "clusterVersion": "1.222.83.20210728-093710"
   },
-  "tsmMetricKey": "calc:service.loadtest.tsn_request_count",
-  "name": "LoadTest.TSN_Request_Count",
+  "tsmMetricKey": "calc:service.loadtest.ltn_request_count",
+  "name": "LoadTest.LTN_Request_Count",
   "enabled": true,
   "metricDefinition": {
     "metric": "REQUEST_COUNT",
@@ -56,25 +56,11 @@
         "matchOnChildCalls": false,
         "source": null
       }
-    },
-    {
-      "attribute": "SERVICE_REQUEST_ATTRIBUTE",
-      "comparisonInfo": {
-        "type": "STRING_REQUEST_ATTRIBUTE",
-        "comparison": "EXISTS",
-        "value": null,
-        "values": null,
-        "negate": false,
-        "requestAttribute": "LoadTest TSN",
-        "caseSensitive": false,
-        "matchOnChildCalls": false,
-        "source": null
-      }
     }
   ],
   "dimensionDefinition": {
     "name": "Dimension",
-    "dimension": "{RequestAttribute:LoadTest TSN}",
+    "dimension": "{RequestAttribute:LoadTest LTN}",
     "placeholders": [],
     "topX": 50,
     "topXDirection": "DESCENDING",

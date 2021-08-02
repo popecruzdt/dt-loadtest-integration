@@ -5,14 +5,14 @@
     ],
     "clusterVersion": "1.222.83.20210728-093710"
   },
-  "tsmMetricKey": "calc:service.loadtest.tsn_request_count",
-  "name": "LoadTest.TSN_Request_Count",
+  "tsmMetricKey": "calc:service.loadtest.tsn_response_time",
+  "name": "LoadTest.TSN_Response_Time",
   "enabled": true,
   "metricDefinition": {
-    "metric": "REQUEST_COUNT",
+    "metric": "RESPONSE_TIME",
     "requestAttribute": null
   },
-  "unit": "COUNT",
+  "unit": "MICRO_SECOND",
   "unitDisplayName": null,
   "entityId": null,
   "managementZones": [],
@@ -78,6 +78,6 @@
     "placeholders": [],
     "topX": 50,
     "topXDirection": "DESCENDING",
-    "topXAggregation": "SINGLE_VALUE"
+    "topXAggregation": "AVERAGE"
   }
 }

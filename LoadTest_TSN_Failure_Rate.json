@@ -5,14 +5,14 @@
     ],
     "clusterVersion": "1.222.83.20210728-093710"
   },
-  "tsmMetricKey": "calc:service.loadtest.tsn_request_count",
-  "name": "LoadTest.TSN_Request_Count",
+  "tsmMetricKey": "calc:service.loadtest.tsn_failure_rate",
+  "name": "LoadTest.TSN_Failure_Rate",
   "enabled": true,
   "metricDefinition": {
-    "metric": "REQUEST_COUNT",
+    "metric": "FAILURE_RATE",
     "requestAttribute": null
   },
-  "unit": "COUNT",
+  "unit": "PERCENT",
   "unitDisplayName": null,
   "entityId": null,
   "managementZones": [],
@@ -78,6 +78,6 @@
     "placeholders": [],
     "topX": 50,
     "topXDirection": "DESCENDING",
-    "topXAggregation": "SINGLE_VALUE"
+    "topXAggregation": "OF_INTEREST_RATIO"
   }
 }
